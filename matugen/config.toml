@@ -44,7 +44,7 @@ output_path = '~/.config/quickshell/matugen.json'
 
 [templates.vesktop]
 input_path = '~/.config/matugen/templates/midnight-discord.css'
-output_path = '/home/rick/.config/BetterDiscord/themes/midnight.theme.css'
+output_path = '~/.config/BetterDiscord/themes/midnight.theme.css'
 
 [templates.folder]
 input_path = '~/.config/matugen/templates/folder-color.txt'
