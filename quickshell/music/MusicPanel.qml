@@ -36,7 +36,7 @@ PanelWindow {
     /* ---------- MATUGEN ---------- */
     FileView {
         id: matugenFile
-        path: Qt.environment.HOME + "/.config/quickshell/matugen.json"
+        path: "/home/rick/.config/quickshell/matugen.json"
 
         onLoaded: {
             try {
@@ -68,12 +68,16 @@ PanelWindow {
     Rectangle {
         anchors.centerIn: parent
         width: 400
-        height: 150
-        radius: 20
+        height: 140
+		Layout.bottomMargin: 5
+        radius: 30
         color: col("surface", "#282b24")
-        border.width: 1
+        border.width: 0
         border.color: col("outline_variant","#44483e")
         clip: true
+        antialiasing: true
+        layer.enabled: true
+		layer.smooth: true
 
         RowLayout {
             anchors.fill: parent
