@@ -40,7 +40,7 @@
     "tooltip": false,
     "format": "{:%H:%M}",
     "interval": 1,
-    "on-click": "python ~/.config/hypr/scripts/music.py --toggle",
+    "on-click": "qs -c ~/.config/quickshell/music msg music toggle",
   },
 
   "network": {
