@@ -102,7 +102,8 @@
   min-width: 15px;
 }
 #tray {
-  padding-right: 0.45rem;
+  padding-right: 0.1rem;
+  padding-left: 0.9rem;
 }
 #custom-notification {
   padding-right: 0.955rem;
