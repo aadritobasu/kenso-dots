@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [ -f /tmp/hypr_caffeine ]; then
-    echo '{"text":"Caffeine","alt":"on","class":"active","icon":"coffee"}'
+if pgrep -x hypridle >/dev/null; then
+    echo false
 else
-    echo '{"text":"Caffeine","alt":"off","class":"inactive","icon":"coffee-off"}'
+    echo true
 fi
