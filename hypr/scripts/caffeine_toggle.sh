@@ -3,20 +3,11 @@
 STATE_FILE="/tmp/hypr_caffeine"
 
 if [ -f "$STATE_FILE" ]; then
-    # ----- Disable caffeine → start hypridle -----
-
-    if ! pgrep -x hypridle >/dev/null; then
-        hypridle &
-    fi
-
+    hyprctl idle uninhibit
     rm "$STATE_FILE"
-    notify-send "☕ Caffeine Mode" "Disabled"
-
+    notify-send "Caffeine" "Disabled 😴"
 else
-    # ----- Enable caffeine → stop hypridle -----
-
-    pkill -x hypridle
-
+    hyprctl idle inhibit
     touch "$STATE_FILE"
-    notify-send "☕ Caffeine Mode" "Enabled"
+    notify-send "Caffeine" "Enabled ☕"
 fi

@@ -99,9 +99,8 @@
 		{
 		  "label": "",
 		  "type": "toggle",
-		  "command": "sh -c '$HOME/.config/hypr/scripts/caffeine_toggle.sh'",
-		  "update-command": "sh -c '$HOME/.config/hypr/scripts/caffeine_status.sh'"
-
+		  "active": "~/.config/hypr/scripts/caffeine_status.sh",
+          "command": "~/.config/hypr/scripts/caffeine_toggle.sh"
 		},
         {
           "label": "",
